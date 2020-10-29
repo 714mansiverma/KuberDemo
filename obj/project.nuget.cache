@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s3oW7jCmo0ZXaEXqOK1o/HvZhF7KCw/nAdxNlFsEWGidsFW9tbO/Py1mFNzuqMvacsLfUQXHuEqu4p1GmGyItg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shree\\source\\repos\\DemoKubern\\DemoKubern.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shree\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

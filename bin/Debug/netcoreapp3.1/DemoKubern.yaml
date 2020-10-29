@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demokubern-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: DemoKubern
+  template:
+    metadata:
+      labels:
+        app: DemoKubern
+    spec:
+      containers:
+      - name: demokubernrepos
+        image: sample714cr.azurecr.io/demokubernrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dsconfigsn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demokubern
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: DemoKubern
